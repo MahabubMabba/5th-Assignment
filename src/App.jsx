@@ -1,8 +1,5 @@
-
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import './App.css'
+import Banner from './components/Banner'
 import Nav from './components/Nav'
 
 function App() {
@@ -11,7 +8,7 @@ function App() {
   return (
     <>
      <Nav></Nav>
-     
+     <Banner></Banner>
     </>
   )
 }
