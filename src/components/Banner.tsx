@@ -26,7 +26,7 @@ const Banner = () => {
             Explore Technologies
           </button>
 
-          <button className="rounded-2xl bg-white px-5 py-3 text-black">
+          <button className="rounded-2xl bg-white px-5 py-3 text-black border-gray-500 border">
             Learn More
           </button>
         </div>
