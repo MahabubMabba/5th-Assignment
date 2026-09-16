@@ -2,7 +2,8 @@ import NavLogo from "../assets/logo-text.png";
 
 const Nav = () => {
   return (
-    <div className=" container mx-auto  items-center py-4">
+    <div className="py-4">
+      <div className=" container mx-auto  items-center ">
       <nav className="flex justify-between items-center ">
         <div>
           <img src={NavLogo} alt="" />
@@ -20,7 +21,9 @@ const Nav = () => {
         </div>
         
       </nav>
-      <div className="divider"></div>
+      
+    </div>
+    <div className="divider"></div>
     </div>
     
   );
