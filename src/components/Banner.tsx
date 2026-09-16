@@ -1,4 +1,3 @@
-import React from "react";
 import BannerImg from "../assets/banner-stack.png";
 
 const Banner = () => {
@@ -26,7 +25,7 @@ const Banner = () => {
             Explore Technologies
           </button>
 
-          <button className="rounded-2xl bg-white px-5 py-3 text-black border-gray-500 border">
+          <button className="rounded-2xl border border-gray-500 bg-white px-5 py-3 text-black">
             Learn More
           </button>
         </div>

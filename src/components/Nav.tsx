@@ -5,10 +5,10 @@ const Nav = () => {
     <div className="sticky top-0 z-50 bg-white">
       <div className="container mx-auto px-4">
         <nav className="flex items-center justify-between py-4">
-          
           <div>
             <img src={NavLogo} alt="Dev Stack" />
           </div>
+
           <div className="flex items-center gap-6">
             <a href="" className="text-pink-600">
               Home
@@ -27,8 +27,8 @@ const Nav = () => {
               Sign Up
             </button>
           </div>
-
         </nav>
+
         <div className="divider m-0"></div>
       </div>
     </div>

@@ -11,7 +11,6 @@ const YourStack = ({
 }: YourStackProps) => {
   return (
     <div className="rounded-2xl border border-gray-200 bg-white p-4">
-      {/* Heading */}
       <div className="mb-4">
         <div className="flex items-center justify-between">
           <h3 className="text-lg font-bold text-gray-900">
@@ -28,7 +27,6 @@ const YourStack = ({
         </p>
       </div>
 
-      {/* Empty State */}
       {selectedTechnologies.length === 0 ? (
         <div className="rounded-xl border border-dashed border-gray-200 py-8 text-center">
           <p className="text-sm text-gray-400">
@@ -41,7 +39,6 @@ const YourStack = ({
         </div>
       ) : (
         <>
-          {/* Selected Technologies */}
           <div className="space-y-2">
             {selectedTechnologies.map((technology) => (
               <div
@@ -68,10 +65,9 @@ const YourStack = ({
                   </div>
                 </div>
 
-                {/* Remove */}
                 <button
                   onClick={() => handleRemove(technology.id)}
-                  className="text-sm text-gray-400 hover:text-red-500"
+                  className="text-lg text-gray-400 hover:text-red-500"
                 >
                   ×
                 </button>
@@ -79,7 +75,6 @@ const YourStack = ({
             ))}
           </div>
 
-          {/* Remove All */}
           <button
             onClick={handleRemoveAll}
             className="mt-4 w-full rounded-xl border border-red-200 py-2 text-xs font-semibold text-red-500 hover:bg-red-50"

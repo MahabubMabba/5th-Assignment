@@ -21,13 +21,10 @@ const Technologies = ({
 
   return (
     <section className="container mx-auto py-10">
-      {/* Heading */}
       <div className="mb-8">
         <h2 className="text-3xl font-bold">
           Explore the{" "}
-          <span className="text-pink-600">
-            Technologies
-          </span>
+          <span className="text-pink-600">Technologies</span>
         </h2>
 
         <p className="mt-2 text-sm text-gray-400">
@@ -35,9 +32,7 @@ const Technologies = ({
         </p>
       </div>
 
-      {/* Main Layout */}
       <div className="grid grid-cols-4 gap-6">
-        {/* Technology Cards */}
         <div className="col-span-3 grid grid-cols-3 gap-5">
           {technologies.map((technology) => (
             <TechnologyCard
@@ -49,7 +44,6 @@ const Technologies = ({
           ))}
         </div>
 
-        {/* Your Stack */}
         <div className="col-span-1">
           <YourStack
             selectedTechnologies={selectedTechnologies}

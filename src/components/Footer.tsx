@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className='flex justify-between mt-15'>
+      <div className='flex justify-between mt-15 mb-6'>
         <p>© 2026 Dev Stack. All rights reserved.</p>
         <div className=' flex gap-3'>
             <a className='text-gray-500 ' href="">Privacy</a>

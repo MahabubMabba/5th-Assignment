@@ -5,6 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Nav from "./components/Nav";
 import Banner from "./components/Banner";
 import Technologies from "./components/Technologies";
+import Footer from "./components/Footer";
 
 const technologiesFetch = async () => {
   const res = await fetch("/data.json");
@@ -18,7 +19,6 @@ const technologiesPromise = technologiesFetch();
 const App = () => {
   const [selectedTechnologies, setSelectedTechnologies] = useState([]);
 
-  // Add to Stack
   const handleAddToStack = (technology) => {
     const alreadyAdded = selectedTechnologies.some(
       (item) => item.id === technology.id
@@ -37,7 +37,6 @@ const App = () => {
     toast.success(`${technology.name} added to your stack!`);
   };
 
-  // Remove one technology
   const handleRemove = (id) => {
     const technology = selectedTechnologies.find(
       (item) => item.id === id
@@ -50,7 +49,6 @@ const App = () => {
     toast.success(`${technology.name} removed from your stack!`);
   };
 
-  // Remove all
   const handleRemoveAll = () => {
     if (selectedTechnologies.length === 0) {
       return;
@@ -76,7 +74,7 @@ const App = () => {
           handleRemoveAll={handleRemoveAll}
         />
       </Suspense>
-
+      <Footer></Footer>
       <ToastContainer position="top-center" />
     </>
   );
